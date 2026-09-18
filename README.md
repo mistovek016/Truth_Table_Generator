@@ -4,7 +4,8 @@ This is a simple program to generate truth tables for a proposition of any lengt
 - Not
 - Implies
 - Biconditional
-It can handle nesting expression in parenthesis by recursively evaluating them (inner to outer)
+
+It handles nested expressions in parenthesis by recursively evaluating them (inner to outer).
 
 ## How to use
 1) Make sure you have Java installed (You can use [this article](https://www.geeksforgeeks.org/linux-unix/download-install-java-windows-linux-macos/) for the same)
