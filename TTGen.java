@@ -85,7 +85,7 @@ public class TTGen {
         for (int i = 0; i < 2; i++) {
             currentPerm.add(i == 0);
             getPerms(len);
-            currentPerm.removeLast();
+            currentPerm.remove(currentPerm.size() -1 );
         }
     }
 
