@@ -1,5 +1,5 @@
 import java.util.*;
-public class BetterTruthTables {
+public class TTGen {
 
     private final ArrayList<Character> vars;
     private final String prop;
@@ -7,7 +7,7 @@ public class BetterTruthTables {
     ArrayList<ArrayList<Boolean>> allPerms = new ArrayList<>();
     ArrayList<Boolean> currentPerm = new ArrayList<>();
 
-    BetterTruthTables(String prop) {
+    TTGen(String prop) {
         this.prop = prop;
         vars = new ArrayList<>();
         for (char c : prop.toCharArray()) {
@@ -27,7 +27,7 @@ public class BetterTruthTables {
         System.out.println("AND: ^\nOR: v\nNEGATION: ~\nIMPLIES: >\nBICONDITIONAL: =");
         System.out.print("Please enter the proposition: ");
         String prop = sc.nextLine();
-        BetterTruthTables tt = new BetterTruthTables(prop);
+        TTGen tt = new TTGen(prop);
         tt.getTableEntries();
     }
 
